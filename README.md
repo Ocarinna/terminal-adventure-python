@@ -1,54 +1,52 @@
 # 🎮 Terminal Adventure
 
-Bem-vindo ao **Terminal Adventure**, um jogo de aventura em texto no terminal feito com Python!
+Jogo de aventura em texto feito em Python, jogado direto no terminal.
 
-Você é um aventureiro perdido nas misteriosas **Terras de Podridão**. Derrote monstros, evolua seu personagem e conquiste todos os cenários para sair vivo desse lugar amaldiçoado.
+Você é um aventureiro perdido nas **Terras de Podridão**. Derrote monstros, evolua seu personagem e conquiste todos os cenários para sair vivo desse lugar amaldiçoado.
 
----
+## Funcionalidades
 
-## 🧠 Funcionalidades
+- Batalhas por turnos com inimigos únicos
+- Ações de combate: atacar, bloquear, curar ou fugir
+- Sistema de XP e níveis, com evolução de HP e dano
+- Inimigos que ficam mais fortes conforme você avança
+- Quatro cenários (floresta, ruínas, caverna e torre), com duas salas de batalha cada
+- Progresso salvo automaticamente e carregado ao iniciar
+- Efeitos sonoros simples no terminal
 
-- Sistema de batalhas com inimigos únicos.
-- Escolhas de ação: atacar, curar, bloquear ou fugir.
-- Níveis, experiência (XP), evolução de atributos (HP e dano).
-- Quatro cenários principais com duas salas de batalha em cada.
-- Progresso salvo automaticamente e carregado ao iniciar o jogo.
-- Efeitos sonoros simples (beep via terminal).
-- Finalização automática e limpa do jogo ao vencer todos os inimigos.
+## Como jogar
 
----
-
-## ▶️ Como Jogar
-
-### Pré-requisitos
-
-- Python 3.10 ou superior instalado no sistema.
-
-### Executar o jogo
+Requisito: Python 3.10 ou superior.
 
 ```bash
-python main.py
+git clone https://github.com/Ocarinna/terminal-adventure-python.git
+cd terminal-adventure-python
+python "Terminal Adventure.py"
+```
 
-Controles
-Durante o jogo, você poderá:
+### Controles
 
-Escolher cenários para explorar.
+Durante as batalhas, digite o número da ação:
 
-Lutar contra inimigos com opções de combate:
+| Tecla | Ação    |
+|-------|---------|
+| 1     | Atacar  |
+| 2     | Bloquear|
+| 3     | Curar   |
+| 4     | Fugir   |
 
-1 Atacar
+O jogo termina com vitória quando todos os inimigos principais forem derrotados.
 
-2 Bloquear
+## Salvamento
 
-3 Curar
+O progresso é salvo automaticamente. Ao abrir o jogo, você escolhe se quer continuar de onde parou.
 
-4 Fugir da batalha
+## Próximos passos
 
-O jogo salva automaticamente seu progresso.
+- [ ] Separar o código em módulos (`engine`, `player`, `battle`, `areas`, `save`)
+- [ ] Criar uma classe `Player` no lugar de variáveis globais
+- [ ] Lançar uma versão web do jogo
 
-Quando derrotar todos os inimigos principais, o jogo termina com vitória.
+## Tecnologias
 
-💾 Salvamento
-O progresso é salvo automaticamente em assets/savegame.txt.
-
-Ao iniciar o jogo, será perguntado se deseja continuar de onde parou.
+Python 3 (apenas biblioteca padrão)
